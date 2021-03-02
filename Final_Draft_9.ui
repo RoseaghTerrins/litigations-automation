@@ -1,0 +1,2309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Recoveries Management Application</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../.designer/Desktop/favicon.ico</normaloff>../../.designer/Desktop/favicon.ico</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonFollowStyle</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>711</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Process Files</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>681</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>From Client</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which Client File(s) To Process:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Yu Energy</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>651</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Process:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>27</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>New Business File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>51</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Query Response File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>111</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Process</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>88</y>
+           <width>101</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Client Recall File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>118</y>
+           <width>131</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Adjustment File</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>380</y>
+          <width>601</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+        </property>
+        <row>
+         <property name="text">
+          <string>New Business</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Query Response</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Closure</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Adjustment</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Name of File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Client</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Status of File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Last Update</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SLA Breached?</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>651</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>651</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which DCA You Want This File(s) To Be Sent To:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>1st Locate</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <zorder>groupBox_9</zorder>
+       <zorder>groupBox</zorder>
+       <zorder>groupBox_2</zorder>
+       <zorder>tableWidget</zorder>
+       <zorder>groupBox_11</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>From DCA</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which DCA File(s) To Process:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>1st Locate</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>651</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Process:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>25</y>
+           <width>191</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Non-Financial Updates File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>49</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Transaction File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>160</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Process</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_9">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>78</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Closure File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_17">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>116</y>
+           <width>241</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Activity File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_18">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>146</y>
+           <width>141</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Arrangement File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>176</y>
+           <width>141</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Query File</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>651</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>631</width>
+           <height>211</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Non-Financial Updates</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Transaction</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Adjustment</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Closure</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Activity</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>AGMTS</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Query</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>DCA</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>SLA Breached?</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <zorder>groupBox_10</zorder>
+       <zorder>groupBox_3</zorder>
+       <zorder>groupBox_4</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>From Litigation Provider</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which Client File(s) To Process:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Yu Energy</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>651</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which Litigation Provider You Want This File(s) To Be Sent To:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_11">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>AJJB Law</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>651</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Process:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_21">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>32</y>
+           <width>191</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Non-Financial Updates File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_22">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>59</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Transaction File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>160</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Process</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_23">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>96</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Closure File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_27">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>136</y>
+           <width>241</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Activity File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_29">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>172</y>
+           <width>141</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Query File</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>360</y>
+          <width>651</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>631</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Non-Financial Updates</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Transaction</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Closure</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Activity</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Query</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Litigator</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>SLA Breached?</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>From Enrichment</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_24">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>651</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>1) Process the below data enrichment files in order to finalise the list of accounts for placement:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_36">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Transunion</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_37">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>74</y>
+           <width>121</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Credit Safe</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>70</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Process</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_28">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>651</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results - Creation Of List Of Accounts For Placement </string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>29</y>
+           <width>581</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Placement (For Review)</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Provider</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_29">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>651</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>2) Once list of accounts for placement has been reviewed, create the finalised Placement File for export:</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>70</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Create</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_31">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>50</y>
+           <width>121</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Placement File</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_30">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>410</y>
+          <width>651</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results - Finalised List Of Accounts For Placement </string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>32</y>
+           <width>581</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Placement (Confirmed) </string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Provider</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Export Files</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>681</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>To Client</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which Client File(s) To Export:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_7">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Yu Energy</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>651</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Export:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_10">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>27</y>
+           <width>191</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Non-Financial Updates File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_11">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>51</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Transaction File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>140</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Export</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Adjustment File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>111</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Closure File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_20">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>148</y>
+           <width>111</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Query File</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>340</y>
+          <width>631</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+        </property>
+        <row>
+         <property name="text">
+          <string>Non-Financial Updates</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Transaction</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Adjustment</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Closure</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Query</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Name of File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Client</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Status of File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Last Update</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SLA Breached?</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>300</y>
+          <width>651</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+       </widget>
+       <zorder>groupBox_13</zorder>
+       <zorder>groupBox_5</zorder>
+       <zorder>groupBox_6</zorder>
+       <zorder>tableWidget_4</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>To DCA</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which DCA File(s) To Export:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>1st Locate</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>651</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Export:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_14">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>27</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Assignment File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_15">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>51</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Query Response File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>140</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Export</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>89</y>
+           <width>70</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Pay File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_16">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>118</y>
+           <width>70</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Bill File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_19">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>141</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Client Recall File</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>360</y>
+          <width>611</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+        </property>
+        <row>
+         <property name="text">
+          <string>Assignment </string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Query Response</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Pay File</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Bill File</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Client Recall</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Name of File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Client</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Status of File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Last Update</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SLA Breached?</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>651</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+       </widget>
+       <zorder>groupBox_12</zorder>
+       <zorder>tableWidget_5</zorder>
+       <zorder>groupBox_7</zorder>
+       <zorder>groupBox_8</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>To Litigation Provider</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>339</y>
+          <width>651</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Export:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_24">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>25</y>
+           <width>191</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Transaction File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_30">
+         <property name="geometry">
+          <rect>
+           <x>219</x>
+           <y>24</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Placement File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_25">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>52</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Balance Update File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_26">
+         <property name="geometry">
+          <rect>
+           <x>219</x>
+           <y>53</y>
+           <width>180</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Closure File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="geometry">
+          <rect>
+           <x>539</x>
+           <y>51</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Export</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>430</y>
+          <width>651</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_6">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>611</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Transaction</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Balance Update</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Closure</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Placement</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Litigator</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>SLA Breached?</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>72</y>
+          <width>651</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which File(s) To Process:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_38">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>21</y>
+           <width>191</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Transaction File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_40">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>47</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Balance Update File</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_41">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>74</y>
+           <width>180</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Closure File</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="geometry">
+          <rect>
+           <x>539</x>
+           <y>70</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Create</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_22">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>186</y>
+          <width>651</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Results</string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_11">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>611</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Transaction</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Balance Update</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Closure</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Litigator</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>SLA Breached?</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_31">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Select Which Litigation Provider(s) Output File(s) To Create:</string>
+        </property>
+        <widget class="QComboBox" name="comboBox_13">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>23</y>
+           <width>241</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click to Select Client Name</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>AJJB Law</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>To Enrichment</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_23">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>651</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>1) Select Which Enrichment Provider File(s) To Create:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_32">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Transunion</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_33">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>74</y>
+           <width>121</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Credit Safe</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>70</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Create</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>651</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Creation Results</string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_7">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>31</y>
+           <width>561</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Transunion              </string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Credit Safe            </string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Provider</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_26">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>289</y>
+          <width>651</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>2) Select Which Enrichment Provider File(s) To Export:</string>
+        </property>
+        <widget class="QCheckBox" name="checkBox_34">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Transunion</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_35">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>73</y>
+           <width>121</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Credit Safe</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>70</y>
+           <width>93</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="toolTip">
+          <string>Click To Process Selected Files</string>
+         </property>
+         <property name="text">
+          <string>Export</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_27">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>401</y>
+          <width>651</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Export Results</string>
+        </property>
+        <widget class="QTableWidget" name="tableWidget_8">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>561</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+         </property>
+         <row>
+          <property name="text">
+           <string>Transunion              </string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>Credit Safe            </string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Name of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Provider</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status of File</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Update</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOutbound">
+   <property name="text">
+    <string>Outbound</string>
+   </property>
+  </action>
+  <action name="actionInbound">
+   <property name="text">
+    <string>Inbound</string>
+   </property>
+  </action>
+  <action name="actionOutbound_2">
+   <property name="text">
+    <string>Outbound</string>
+   </property>
+  </action>
+  <action name="actionFrom_Client_2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>From Client</string>
+   </property>
+  </action>
+  <action name="actionTo_Client">
+   <property name="text">
+    <string>To Client</string>
+   </property>
+  </action>
+  <action name="actionTo_DCA">
+   <property name="text">
+    <string>To DCA</string>
+   </property>
+  </action>
+  <action name="actiontEST">
+   <property name="text">
+    <string>tEST</string>
+   </property>
+  </action>
+  <action name="actionFrom_DCA_2">
+   <property name="text">
+    <string>From DCA</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tabWidget_2</tabstop>
+  <tabstop>tabWidget_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
